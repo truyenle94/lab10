@@ -23,7 +23,7 @@ router.get('/states/:name', function(req, res, next) {
         })
         .catch( err => next.err() )
 })
-
+/*nw*/
 
 router.patch('/state/:name', function(req, res, next){
     States.update({ visited: req.body.visited}, { where: {
